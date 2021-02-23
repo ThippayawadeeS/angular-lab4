@@ -1,0 +1,21 @@
+<div class = "task"> My Tasks Today:</div>
+
+<ul>
+    <li *ngFor="let item of todolists; let i = index">
+        <span *ngIf="item !== 5">{{ item }} <button (click)="Todelete (i)">Delete</button> </span> 
+    </li>
+</ul>
+
+<hr>
+
+<div>
+    <div>
+        <b>Task</b>: <input [(ngModel)]="title" /> 
+        <button (click)="ToAdd ()">Add</button>
+    </div>
+</div>
+
+<div>
+    
+</div>
+
